@@ -29,3 +29,4 @@ jobs:
 
           # 默认会同步 account_type 下的所有仓库, 打开下面配置只同步当前仓库
           # static_list: ${{ github.event.repository.name }}
+          black_list: "Logback,GitBook,MongoDB,ituknown.github.io,.github"
