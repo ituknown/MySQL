@@ -2,7 +2,7 @@
 
 ```sql
 UPDATE table t1
-INNER JOIN (
+[LEFT/RIGHT] JOIN (
   SELECT column...
   FROM table
   WHERE some_condition
@@ -14,7 +14,7 @@ SET t1.column = t2.column...
 
 ```sql
 UPDATE table1 t1
-INNER JOIN table2 t2 ON t1.column = t2.column
+[LEFT/RIGHT] JOIN table2 t2 ON t1.column = t2.column
 SET t1.column = t2.column...
 WHERE some_condition
 ```
