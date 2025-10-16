@@ -8,6 +8,7 @@ UPDATE table t1
   WHERE some_condition
 ) AS t2 ON t1.column = t2.column
 SET t1.column = t2.column...
+[WHERE some_condition]
 ```
 
 **多表：使用 JOIN 查询**
@@ -16,5 +17,5 @@ SET t1.column = t2.column...
 UPDATE table1 t1
 [LEFT/RIGHT] JOIN table2 t2 ON t1.column = t2.column
 SET t1.column = t2.column...
-WHERE some_condition
+[WHERE some_condition]
 ```
